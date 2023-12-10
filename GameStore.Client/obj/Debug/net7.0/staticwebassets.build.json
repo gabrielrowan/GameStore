@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vtlv+KKlcPOrj/q1JJ8TcB+ef7SrE3fp9GizTrj6Z5E=",
+  "Hash": "MPINLzayop/Cqu6rS+6VAsqSW6KME1OTadK6nl4vLuo=",
   "Source": "GameStore.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -7155,23 +7155,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
-    },
-    {
-      "Identity": "C:\\Users\\gabriel\\OneDrive\\Programming\\Blazor Game Store\\GameStore.Client\\wwwroot\\sample-data\\weather.json",
-      "SourceId": "GameStore.Client",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gabriel\\OneDrive\\Programming\\Blazor Game Store\\GameStore.Client\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "sample-data/weather.json",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\sample-data\\weather.json"
     }
   ]
 }
