@@ -1,14 +1,22 @@
 ﻿@page "/"
 @using Models
+@inject NavigationManager NavigationManager
 
 <PageTitle>Game Catalog</PageTitle>
 
 <h1>Game Catalog</h1>
 
-@if (games is null) {
+<div class="row mb-4">
+    <div class="col-sm-6">
+        <button type="button" @onclick="CreateGame" class="btn btn-primary">New Game</button>
+    </div>
+</div>
+
+@if (games is null)
+{
     <p>Loading...</p>
 }
-else 
+else
 {
     <table class="table table-striped table-bordered table-hover">
         <thead class="table-dark">
@@ -19,7 +27,7 @@ else
             <th>Release Date</th>
         </thead>
         <tbody>
-            @foreach(var game in games)
+            @foreach (var game in games)
             {
                 <tr>
                     <td>
@@ -44,11 +52,16 @@ else
 }
 @code {
 
-   private Game[]? games;
+    private Game[]? games;
 
-        protected override void OnInitialized()
-        {
-            games = GameClient.GetGames();
-        }
+    protected override void OnInitialized()
+    {
+        games = GameClient.GetGames();
+    }
+
+    private void CreateGame()
+    {
+        NavigationManager.NavigateTo("/game");
+    }
 
 }
